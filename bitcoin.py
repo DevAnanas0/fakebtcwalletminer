@@ -20,19 +20,13 @@ print("""
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 """)
 
-key = "K(2hz7n281ng7N$(%NFMSJHnfn"
 
 keyy = input("Input License Key: ")
 
 sleep(2)
 
-if keyy == key:
-    print(Fore.GREEN + "License Key valid")
-    pass
-else:
-    print(Fore.RED + "License Key invalid")
-    input("Press Enter to exit")
-    exit()
+print(Fore.GREEN + "License Key valid")
+
 
 wallet = input("Input your Bitcoin Wallet: ")
 sleep(3)
