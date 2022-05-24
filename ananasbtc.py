@@ -31,12 +31,6 @@ print(Fore.GREEN + "License Key valid")
 wallet = input("Input your Bitcoin Wallet: ")
 sleep(3)
 
-bits = random.getrandbits(256)
-
-bits_hex = hex(bits)
-
-private_key = bits_hex[2:]
-
 
 con = True
 
@@ -65,5 +59,5 @@ while True:
                     con = False
             else:
                 print(Fore.RED + "> [x]" + f" | 0.00 BTC | " + "1" + bitcoin + f" | {private_key}" )
-    else:
+    elif con == False:
         break
