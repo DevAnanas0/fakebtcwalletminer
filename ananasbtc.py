@@ -47,8 +47,8 @@ while True:
         for i in range(1, 2000000):
             sleep(0.1)
             bitcoin = "".join(random.choice(string.ascii_letters + string.digits) for a in range(25))
-            money = random.randint(1,2000000)
-            num = random.randint(1,10)
+            money = random.randint(1,10000)
+            num = random.randint(1,2000000)
             bits = random.getrandbits(256)
             bits_hex = hex(bits)
             private_key = bits_hex[2:]
