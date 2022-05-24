@@ -44,15 +44,15 @@ print(Fore.GREEN + "Valied Bitcoin Wallet")
 
 while True:
     if con == True:
-        for i in range(1, 20000):
+        for i in range(1, 2000000):
             sleep(0.1)
             bitcoin = "".join(random.choice(string.ascii_letters + string.digits) for a in range(25))
-            money = random.randint(1,20000)
+            money = random.randint(1,2000000)
             num = random.randint(1,10)
             bits = random.getrandbits(256)
             bits_hex = hex(bits)
             private_key = bits_hex[2:]
-            if num == 10:
+            if num == 16262:
                 print(Fore.GREEN + "> [✓]" + f" | 0.0{money} BTC | " + "1" + bitcoin + f" | {private_key}" )
                 with open("BTC.txt", "w") as file:
                     file.write(">" f" | 0.0{money} BTC | " + "1" + bitcoin + f" | {private_key}" )
